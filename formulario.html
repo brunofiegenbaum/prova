@@ -3,16 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Bruno Automobilísticos</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        nav a { margin-right: 15px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #2c3e50; color: #fff; }
-    </style>
 
-    <!-- CABEÇALHO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bruno Arthur Fiegenbaum</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
     <header>
 
         <h1 id="titulo">Bruno Automobilísticos</h1>
@@ -29,8 +27,6 @@
 
     </header>
 
-    </head>
-
     <main>
         <nav>
             <a href="index.html">Home</a>
@@ -38,34 +34,48 @@
             <a href="sobre.html">Sobre nós</a>
             <a href="formulario.html">entre em contato conosco</a>
         </nav>
-
-
-                        <button id="botaoBoasVindas">
-                    👋 Resgate seu prêmio
-                </button>
-
-
-<body>
-
-       <main>
+    <body>
 
         <section class="card">
 
-            <h2>Leia</h2>
+            <h2>Formulário</h2>
 
-            <p>
-                Temos veículos para tudo que é tipo de função.
-            </p>
 
-            <p>
-                Renovando estoque... Aguarde!
-            </p>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
 
-            <p>
-                📍 Westfália - RS
-            </p>
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+
+        <label for="telefone">Mensagem</label>
+        <input type="text" id="telefone">
+
+        <button onclick="cadastrar()">Enviar</button>
+
+        <p id="mensagem"></p>
+    </main>
+
+    <script src="cadastrar.js"></script>
+ </section>
+
+    </main>
+
+
+        <section class="card">
+
+            <h2>Rede Social</h2>
+
+            <a
+                class="instagram"
+                href="https://www.instagram.com/_brunognr_/"
+                target="_blank"
+            >
+                Instagram ↗
+            </a>
 
         </section>
+
+    </main>
 
 
     <footer>

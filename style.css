@@ -1,0 +1,476 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: #0f1117;
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    text-align: center;
+
+    padding: 60px 20px 40px;
+
+    background-color: #181c25;
+
+    border-bottom: 1px solid #2b3342;
+}
+
+
+h1 {
+    margin: 0;
+
+    color: #4f8cff;
+
+    font-size: 24px;
+}
+
+
+.subtitulo {
+    color: #a8b0c0;
+
+    margin-top: 8px;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    margin-top: 25px;
+
+    border-radius: 50%;
+
+    border: 5px solid #4f8cff;
+
+    box-shadow: 0 0 30px rgba(79, 140, 255, 0.25);
+}
+.foto-carro {
+    width: 300px;
+    height: 200px;
+
+    margin-top: 25px;
+
+    border: 5px solid #4f8cff;
+
+    box-shadow: 0 0 30px rgba(79, 140, 255, 0.25);
+}
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background-color: #181c25;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid #2b3342;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+.card:hover {
+    border-color: #4f8cff;
+
+    transform: translateY(-2px);
+
+    transition: 0.2s;
+}
+
+
+h2 {
+    margin-top: 0;
+
+    color: #4f8cff;
+
+    font-size: 25px;
+
+    border-left: 4px solid #4f8cff;
+
+    padding-left: 12px;
+}
+
+
+h3 {
+    color: #ffffff;
+}
+
+
+p {
+    color: #a8b0c0;
+}
+
+
+/* =========================
+   LISTAS
+========================= */
+
+li {
+    color: #a8b0c0;
+
+    margin-bottom: 8px;
+}
+
+
+li::marker {
+    color: #4f8cff;
+}
+
+
+/* =========================
+   HABILIDADES
+========================= */
+
+.habilidade {
+    margin-bottom: 20px;
+}
+
+
+.habilidade span {
+    color: #ffffff;
+
+    font-weight: bold;
+}
+
+
+.barra {
+    width: 100%;
+
+    height: 8px;
+
+    margin-top: 7px;
+
+    background-color: #0f1117;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.progresso {
+    height: 100%;
+
+    background-color: #4f8cff;
+
+    border-radius: 10px;
+}
+
+
+.java {
+    width: 100%;
+}
+
+
+.sql {
+    width: 33%;
+}
+
+
+.html {
+    width: 1%;
+}
+
+
+.javascript {
+    width: 1%;
+}
+
+
+/* =========================
+   PROJETOS
+========================= */
+
+.projetos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.projeto {
+    padding: 20px;
+
+    background-color: #0f1117;
+
+    border: 1px solid #2b3342;
+
+    border-radius: 10px;
+}
+
+
+.projeto:hover {
+    border-color: #4f8cff;
+
+    transition: 0.2s;
+}
+
+
+.projeto h3 {
+    margin-top: 0;
+
+    color: #4f8cff;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botoes {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+}
+
+
+button {
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #4f8cff;
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #2d5fc4;
+
+    transform: translateY(-2px);
+
+    transition: 0.2s;
+}
+
+
+/* =========================
+   CAMPO DE NOME
+========================= */
+
+.nome-area {
+    padding: 20px;
+
+    background-color: #0f1117;
+
+    border-radius: 10px;
+
+    border: 1px solid #2b3342;
+}
+
+
+label {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-weight: bold;
+}
+
+
+.entrada {
+
+    gap: 2px;
+}
+
+
+input {
+    flex: 1;
+
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    border: 1px solid #2b3342;
+
+    background-color: #181c25;
+
+    color: #ffffff;
+
+    outline: none;
+}
+
+
+input:focus {
+    border-color: #4f8cff;
+}
+
+
+#mensagem {
+    color: #45d483;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   HOBBY
+========================= */
+
+.hobby-js {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background-color: #0f1117;
+
+    border-radius: 10px;
+
+    border: 1px solid #2b3342;
+}
+
+
+#hobby {
+    color: #45d483;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   INSTAGRAM
+========================= */
+
+.instagram {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background-color: #4f8cff;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+
+.instagram:hover {
+    background-color: #2d5fc4;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background-color: #181c25;
+
+    border-top: 1px solid #2b3342;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+
+    main {
+        width: 94%;
+    }
+
+
+    .card {
+        padding: 22px;
+    }
+
+
+    .projetos {
+        grid-template-columns: 1fr;
+    }
+
+
+    .entrada {
+        flex-direction: column;
+    }
+
+
+    input {
+        width: 100%;
+    }
+
+
+    button {
+        width: 100%;
+    }
+
+}
