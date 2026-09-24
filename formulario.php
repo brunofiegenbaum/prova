@@ -1,25 +1,30 @@
 <?php
+require_once 'ClienteDAO.php';
+
 $mensagemRetorno = "";
 $nome = "";
 $email = "";
-$mensagem = "";
+$telefone = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nome = trim($_POST["nome"] ?? "");
     $email = trim($_POST["email"] ?? "");
-    $mensagem = trim($_POST["mensagem"] ?? "");
+    $telefone = trim($_POST["telefone"] ?? "");
 
     $emailValido = filter_var($email, FILTER_VALIDATE_EMAIL);
 
-    if ($nome === "" || !$emailValido || $mensagem === "") {
-        $mensagemRetorno = "Preencha nome, e-mail válido e mensagem.";
+    if ($nome === "" || !$emailValido || $telefone === "") {
+        $mensagemRetorno = "Preencha nome, e-mail válido e telefone.";
     } else {
+        $clienteDAO = new ClienteDAO();
+        $clienteDAO->inserir($nome, $email, $telefone);
+
         $nomeSeguro = htmlspecialchars($nome);
-        $mensagemRetorno = "Obrigado, $nomeSeguro! Sua mensagem foi recebida.";
+        $mensagemRetorno = "Obrigado, $nomeSeguro! Cadastro realizado com sucesso.";
 
         $nome = "";
         $email = "";
-        $mensagem = "";
+        $telefone = "";
     }
 }
 ?>
@@ -47,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </nav>
 
     <section class="card">
-        <h2>Formulário</h2>
+        <h2>Cadastro de cliente</h2>
 
         <form action="formulario.php" method="post">
             <label for="nome">Nome</label>
@@ -56,10 +61,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" value="<?= htmlspecialchars($email) ?>">
 
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem"><?= htmlspecialchars($mensagem) ?></textarea>
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" value="<?= htmlspecialchars($telefone) ?>">
 
-            <button type="submit">Enviar</button>
+            <button type="submit">Cadastrar</button>
         </form>
 
         <?php if ($mensagemRetorno !== ""): ?>
