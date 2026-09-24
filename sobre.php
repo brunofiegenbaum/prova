@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nós - Bruno Automobilísticos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-php.css">
 </head>
 <body>
 <header>
@@ -50,10 +50,8 @@
         <h2>História</h2>
         <h3>Começamos em 1912</h3>
         <p>Começamos revendendo automóveis da primeira guerra mundial.</p>
-
         <h3>Vendemos um fusca para a rainha elisabeth</h3>
         <p>Vendemos o primeiro fusca que saiu para a rainha elisabeth.</p>
-
         <h3>Compramos a ferrari</h3>
         <p>Após ficarmos 10 anos no topo das revendas, compramos a ferrari.</p>
     </section>
